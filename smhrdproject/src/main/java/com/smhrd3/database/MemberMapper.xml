@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+
+<mapper namespace="com.smhrd3.model.DAO">
+
+<!-- 로그인 -->
+<select id="signin" parameterType="com.smhrd3.model.MemberDTO" resultType="com.smhrd3.model.MemberDTO">
+SELECT MB_ID,MB_EMAIL,MB_PROFILE FROM MEMBERS WHERE MB_PW=#{mb_Pw} AND MB_EMAIL=#{mb_Email}
+</select>
+<!-- 회원가입 -->
+<insert id="signup" parameterType="com.smhrd3.model.MemberDTO">
+INSERT INTO MEMBERS(MB_ID,MB_EMAIL,MB_PW,MB_NICK,MB_GENDER,MB_BIRTHDATE)
+VALUES(MEMBERS_SEQ.NEXTVAL,#{mb_Email},#{mb_Pw},#{mb_Nickname},#{mb_Gender},#{mb_Birth}) 
+</insert>
+<!-- 회원정보 수정 -->
+<update id="update" parameterType="com.smhrd3.model.MemberDTO">
+UPDATE MEMBERS 
+SET MB_PW = #{mb_Pwcheck, jdbcType=VARCHAR} 
+WHERE MB_PW IS NOT NULL
+AND MB_PW = #{mb_Pw, jdbcType=VARCHAR} 
+AND MB_EMAIL = #{mb_Email, jdbcType=VARCHAR}
+</update>
+<!-- 프로필사진 변경 -->
+<update id="updateProfile" parameterType="com.smhrd3.model.MemberDTO">
+UPDATE MEMBERS SET MB_PROFILE=#{mb_Profile} WHERE MB_EMAIL=#{mb_Email}
+</update>
+
+</mapper>
+
