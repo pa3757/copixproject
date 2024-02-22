@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+
+<mapper namespace="com.smhrd3.resultmodel.resultDAO">
+
+
+<select id="selectResult" resultType="com.smhrd3.resultmodel.resultDTO">
+SELECT TURTLE_N, DIAG_AT, ANGLE, SCORE FROM DIAGNOSIS_RESULTS ORDER BY DIAG_SEQ
+</select>
+
+
+<select id="selectR" resultType="com.smhrd3.resultmodel.resultDTO">
+SELECT TURTLE_N, DIAG_AT, ANGLE, SCORE FROM (SELECT * FROM DIAGNOSIS_RESULTS ORDER BY DIAG_SEQ) WHERE ROWNUM=1
+</select>
+
+</mapper>
+
