@@ -127,7 +127,7 @@
 							<ul>
 						<br><br>
 								<li>업로드 이미지</li>
-								<li><img src="../webapp/images/${selectR.turtle_N }" width="400px" height="500px" /></li>
+								<li><img src="./images/${selectR.turtle_N }" width="400px" height="500px" /></li>
 							</ul>
 						</main>
 						<main class="result-text2">
