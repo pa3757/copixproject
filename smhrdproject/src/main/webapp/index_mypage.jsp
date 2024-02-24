@@ -111,25 +111,31 @@
 						<main class="spotlight2">
 							<header class="major">
 								<h2>Test Result</h2>
+						<br><br>
 							</header>
 							<!-- 결과 차트 -->
+							<c:forEach var="item" items="${resultList}">
 							<section class="result-container">
-								<main class="chart-container">
-									<header class="pie-chart pie-chart1"><span class="center">80%</span></header>
-									<!-- 추가적인 그래프 관련 코드 추가 가능 -->
-								</main>
-								<main class="result-text">
-									<li>
-										<a>당신의 거북목 상태는 </a>
-										<h2>80%</h2>
-										<a>진단이 되었습니다.</a>
-									</li>
-								</main>
+								<main class="result-text2">
+							<ul>
+								<li>업로드 이미지</li>
+								<li><img src="./images/${item.turtle_N }" width="400px" height="500px" /></li>
+							</ul>
+						</main>
+						<main class="result-text2">
+						<ul>
+							<li><a>당신의 거북목 상태는 </a></li>
+							<li>Angle : ${item.angle }</li>
+							<li>상태 : ${item.score }</li>
+							<li><a>진단이 되었습니다.</a></li>
+						</ul>
+						</main>
 							</section>
+							</c:forEach>
 							<!-- <li><a type="turtle-title">거북목</a></li> -->
 							<br><br>
 							<li>
-							<button class="button scrolly">저장</button>
+							
 							<a href="index_testText.jsp" class="button scrolly">다시하기</a>
 							</li>
 							<img src="" alt="">

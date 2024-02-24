@@ -190,11 +190,16 @@ html {
 }
 
 body {
-	background-color: #935d8c;
+	background-color: #68b3f1;
+	background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #54edf8 15%, #0738c0 85%);
+	background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #54edf8 15%, #0738c0 85%);
+	background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #54edf8 15%, #0563af 85%);
+	background-image: url("images/overlay.png"), linear-gradient(45deg, #54edf8 15%, #0563af 85%);
+	/* background-color: #935d8c;
 	background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 	background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 	background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-	background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+	background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);*/
 	/* background-image: url("images/overlay.png"), url("images/main_image.jpg");
 	background-repeat: repeat, no-repeat;
 	background-size: auto, 100% 100%;
@@ -2179,10 +2184,14 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 select {
-	height: 2.5em;
+	height: 100px !important; 
 	/* 로그인, 회원가입 input 높이 */
 	width: 100%;
+	font-size: 40px;
+	
 }
+
+
 
 textarea {
 	padding: 0.75em 1em;
@@ -4468,14 +4477,11 @@ input[type="date"] {
 	position: relative;
 	width: 100%;
 	height: 2.5em;
-	line-height: 2.5em;
-	padding: 0 42px 0 16px;
+	/*line-height: 2.5em;*/
 	padding-right: 42px;
 	background: url(/assets/css/images/icons8-달력을-찢어-64.png) no-repeat right 12px center / 55px auto;
 	border: 1px solid #ddd;
 	border-radius: 8px;
-	margin-top: 1em;
-	margin-bottom: 1em;
 	background-color: rgba(222, 222, 222, 0.2);
 	font-size: 40px;
 }
@@ -4614,3 +4620,4 @@ input[type="radio"]+label {
 .profilePicture {
 	display: flex;
 }
+

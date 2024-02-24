@@ -18,13 +18,15 @@
 			<li><a href="index_signup.jsp" class="btn-3d cyan">Sign up</a>
 			</c:if>
 		<c:if test="${not empty result.mb_Email }">
-			<li><a href="logOut" class="btn-3d cyan">logout</a></li>
-			<li><a href="index_mypage.jsp" class="btn-3d cyan">Mypage</a></li>
+			<li><a href="logOut" class="btn-2d cyan">logout</a></li>
+			<form action="selectresult" method="get">
+			<button type="submit" class="btn-2d cyan">Mypage</button>
+			</form>
 		</c:if>
 		</ul>
 	</nav>
 </header>
-
+	<input type="url">
 <head>
 	<title>Stellar by HTML5 UP</title>
 	<meta charset="utf-8" />

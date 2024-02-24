@@ -26,6 +26,33 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+	
+	input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+      
+}
+input[type=date] {
+	margin-top: 40px;
+}
+input[type=date] {
+margin-top: 40px
+}
+
+	</style>
 </head>
 
 <body class="is-preload">
@@ -60,16 +87,17 @@
 						<input type="text" name="email" placeholder="Email" />
 						<input type="text" name="nickname" placeholder="Nick_name" />
 						
-							<select class="gender-select" type="gender" name="gender";>
+							<select class="gender-select" type="gender" name="gender">
 								<option id="gender" value="gender">Gender</option>
 								<option value="Man">Man</option>
 								<option value="Woman">woman</option>
 							</select>
-							<input type="date" name="birth" id="birth" data-placeholder="Birth" required>
-						
-						<input type="password" name="pw" placeholder="Password" />
+						<input type="date" name="birth" id="birth" style="padding-top: 60px;" data-placeholder="date" required>
+						<!-- <input type="date" name="birth" id="birth" data-placeholder="date" required>
+						 -->
+						<input type="password" name="pw" style="margin-top:30px;" placeholder="Password" />
 						<br>
-						<input type="password" name="pwcheck" placeholder="Password Check" />
+						<input type="password" name="pwcheck" style="margin-top:0px;" placeholder="Password Check" />
 						<div class="btn-container">
 							<br>
 							<button type="submit" class="btn-3d cyan">Sign up</button>

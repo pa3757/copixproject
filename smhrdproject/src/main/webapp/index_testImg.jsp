@@ -97,6 +97,7 @@
 						</main>
 						<main class="result-text2">
 
+
 							<ul>
 								<li><b>사진 업로드 유의사항</b></li>
 								<li>1. 편한자세로 촬영해주세요</li>
@@ -108,7 +109,8 @@
 					</section>
 					<br>
 					<br>
-					<br> <a href="http://127.0.0.1:5500/" class="button scrolly">테스트 시작</a>
+					<br> 
+					<a href="http://127.0.0.1:5500/" class="button scrolly">테스트 시작</a>
 					<form action="selectR" method="get">
 					<button type="submit">테스트 결과보기</button>
 					</form>
@@ -168,7 +170,6 @@
 					<br>
 					<br>
 					<li>
-					<a href="index_mypage.jsp" class="button scrolly">저장</a> 
 					<a href="index_testImg.jsp" class="button scrolly">다시하기</a>
 					</li>
 					 <img src="" alt="">

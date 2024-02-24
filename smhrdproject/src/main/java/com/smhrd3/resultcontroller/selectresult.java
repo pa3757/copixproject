@@ -22,7 +22,7 @@ public class selectresult extends HttpServlet {
 		resultDAO dao = new resultDAO();
 		List<resultDTO> resultList = dao.selectResult();
 		request.setAttribute("resultList", resultList);
-		RequestDispatcher rd = request.getRequestDispatcher("index_testImg.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("index_mypage.jsp");
 		rd.forward(request, response);
 	}
 

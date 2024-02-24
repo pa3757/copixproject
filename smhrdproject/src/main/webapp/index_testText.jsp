@@ -159,7 +159,6 @@
 					<!-- <li><a type="turtle-title">거북목</a></li> -->
 					<br><br>
 					<li>
-					<a href="index_mypage.jsp" class="button scrolly">저장</a>
 					<a href="index_testImg.jsp"	class="button scrolly">다시하기</a>
 					</li>
 
