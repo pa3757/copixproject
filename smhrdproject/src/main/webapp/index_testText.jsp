@@ -11,8 +11,10 @@
 <header id="header1">
 	<nav id="nav1">
 		<ul>
-			<li><a href="index_main.jsp">Home</a></li>
+			<li><a href="index_main.jsp" class="btn-3d cyan">Home</a></li>
+			<c:if test="${not empty result.mb_Email }">
 			<li><a href="logOut" class="btn-3d cyan">Logout</a></li>
+				</c:if>
 			<!-- <li><a href="#" class="btn-3d cyan">Sign up</a> -->
 		</ul>
 	</nav>

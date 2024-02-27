@@ -49,10 +49,10 @@ input[type=date] {
 	margin-top: 40px;
 }
 input[type=date] {
-margin-top: 40px
+margin-top: 40px;
 }
-
 	</style>
+	
 </head>
 
 <body class="is-preload">
@@ -87,7 +87,7 @@ margin-top: 40px
 						<input type="text" name="email" placeholder="Email" />
 						<input type="text" name="nickname" placeholder="Nick_name" />
 						
-							<select class="gender-select" type="gender" name="gender">
+							<select class="gender-select" type="gender" name="gender" style="color: #ccc;">
 								<option id="gender" value="gender">Gender</option>
 								<option value="Man">Man</option>
 								<option value="Woman">woman</option>
@@ -100,13 +100,12 @@ margin-top: 40px
 						<input type="password" name="pwcheck" style="margin-top:0px;" placeholder="Password Check" />
 						<div class="btn-container">
 							<br>
-							<button type="submit" class="btn-3d cyan">Sign up</button>
+							<button type="submit" class="btn-4d cyan">Sign up</button>
 						</div>
 					</form>
 				</header>
 			</section>
 			
-		</div>
 
 
 		</section>
@@ -154,6 +153,7 @@ margin-top: 40px
 			</section>
 		</footer>
 
+		</div>
 
 	</div>
 

@@ -11,7 +11,7 @@
 <header id="header1">
 	<nav id="nav1">
 		<ul>
-			<li><a href="index_main.jsp">Home</a></li>
+			<li><a href="index_main.jsp" class="btn-3d cyan">Home</a></li>
 			<c:if test="${not empty result.mb_Email }">
 			<li><a href="logOut" class="btn-3d cyan">Logout</a></li>
 			</c:if>
@@ -38,25 +38,9 @@
 		<section id="banner">
 			<div class="content">
 				<h2>Welcome to Coach Fix</h2>
-				<p>
-					안녕하세요. 거북목 진단을 통해 개인에게 필요한 자세 및 운동정보를 제공해주는 서비스입니다.
-					<br>
-				<h3>테스트 종류를 선택해주세요</h3>
-				</p>
-
+				<br><br>
 			</div>
-		</section>
-
-
-		<!--테스트 버튼 생성  -->
-		<section id="intro1">
-			<div class="inner">
-				<ul class="actions">
-					<li><a href="index_testText.jsp" class="button scrolly">설문지 테스트</a></li>
-					<li><a href="index_testImg.jsp" class="button scrolly">이미지 테스트</a></li>
-				</ul>
-			</div>
-		</section>
+		</section>		
 
 
 
@@ -71,8 +55,8 @@
 		<div id="main">
 
 			<!-- 마이페이지 -->
-			<section id="signup" class="main">
-				<header>
+			<section id="signup" class="main" style="padding-top: 250px;">
+				
 					<form id="profileForm" action="profileUpdate" method="post">
         			<div class= "btn-container">
         
@@ -96,7 +80,7 @@
 						<br>
 						<input type="text" name="email" placeholder="Email" />
 						<input type="text" name="nickname" placeholder="Nick_name" />
-						<input type="password" name="pw" placeholder="현재비밀번호" />
+						<input type="password" name="pw" style="margin-bottom: 40px;" placeholder="현재비밀번호" />
 						<input type="password" name="pwchek" placeholder="변경할비밀번호" />
 						<div class="btn-container">
 							<br>
@@ -124,6 +108,7 @@
 						</main>
 						<main class="result-text2">
 						<ul>
+							<li>검사일자 : ${item.diag_AT }</li>
 							<li><a>당신의 거북목 상태는 </a></li>
 							<li>Angle : ${item.angle }</li>
 							<li>상태 : ${item.score }</li>
@@ -131,6 +116,7 @@
 						</ul>
 						</main>
 							</section>
+							<br><br><br>
 							</c:forEach>
 							<!-- <li><a type="turtle-title">거북목</a></li> -->
 							<br><br>
@@ -142,8 +128,6 @@
 
 						</main>
 					</section>
-		</div>
-
 
 
 
@@ -190,6 +174,7 @@
 			</section>
 		</footer>
 
+</div>
 
 
 	</div>

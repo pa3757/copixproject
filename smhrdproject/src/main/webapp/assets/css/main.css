@@ -190,7 +190,7 @@ html {
 }
 
 body {
-	background-color: #68b3f1;
+	background-color: #54edf8;
 	background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #54edf8 15%, #0738c0 85%);
 	background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #54edf8 15%, #0738c0 85%);
 	background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #54edf8 15%, #0563af 85%);
@@ -2577,7 +2577,7 @@ ul {
 }
 
 ul li {
-	padding-left: 0.5em;
+	padding-left: 0em;
 }
 
 ul.alt {
@@ -3993,7 +3993,8 @@ body.is-preload #header.alt .logo {
 /* ==================================================== */
 /* 게시물 버튼 */
 button[type="submit"] {
-	font-size: 22px;
+	font-size: 25px;
+	margin-right: 20px;
 }
 
 
@@ -4217,7 +4218,6 @@ ul#post-list li img {
 	border-color: rgba(87, 93, 89, 0.35);
 	font-size: 1.2em;
 	text-decoration: none;
-	height: 83px;
 }
 
 #banner .content .button:hover {
@@ -4291,12 +4291,13 @@ ul#post-list li img {
 	display: inline-block;
 	font-size: 25px;
 	width: 150px;
-	height: 1.8em;
+	height: 40px;
 	color: white;
 	border-radius: 6px;
 	text-align: center;
 	transition: top .01s linear;
 	text-decoration: none;
+	padding-bottom: 30px;
 }
 
 
@@ -4321,13 +4322,25 @@ ul#post-list li img {
 	font-size: 40px;
 	width: 400px;
 	height:2em;
-	padding-top: 0.2em;
+	padding-top: 10px;
 	color: white;
 	border-radius: 6px;
 	text-align: center;
 	transition: top .01s linear;
 	text-decoration: none;
 }
+
+.btn4-3d {
+	background-color: #616060;
+	display: inline-block;
+	font-size: 30px;
+	width: 200px;
+	color: white;
+	border-radius: 6px;
+	height: 68px;
+	padding-top: 7.5px;
+}
+
 
 .btn-3d.cyan:hover {
 	background-color: #82D1E3;
@@ -4462,6 +4475,12 @@ h2[type=signup] {
 	font-weight: 500;
 }
 
+h2[type=mypage] {
+	text-align: center;
+	font-size: 70px;
+	font-weight: 500;
+}
+
 h6[type=signup] {
 	text-align: center;
 	font-size: 45px;
@@ -4587,12 +4606,10 @@ input[type="radio"]+label {
 }
 
 /* 테스트 결과 그래프 */
-.result-text2 {
+.result-text2{
 	font-size: 35px;
 	/* 결과 텍스트의 스타일 */
 	/* border: 1px solid #2f49de; */
-	margin-left: 50px;
-	margin-right: 50px;
 	width: 20em;
 	height: 15em;
 	display: flex; /* 텍스트 컨테이너에 flex 적용 */
@@ -4620,4 +4637,20 @@ input[type="radio"]+label {
 .profilePicture {
 	display: flex;
 }
+
+.myPage {
+	background-color: #616060;
+	position: relative;
+	display: inline-block;
+	font-size: 25px;
+	width: 150px;
+	height: 30px;
+	color: white;
+	border-radius: 6px;
+	text-align: center;
+	transition: top .01s linear;
+	text-decoration: none;
+	padding-bottom: 30px;
+}
+
 

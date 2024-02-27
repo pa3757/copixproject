@@ -9,7 +9,7 @@
 -->
 <html>
 
-<header id="header1">
+<header id="header1" style="height: 80px;">
 	<nav id="nav1">
 		<ul>
 		<c:if test="${empty result.mb_Email }"  >
@@ -17,10 +17,12 @@
 			<li><a href="index_login.jsp" class="btn-3d cyan">Login</a></li>
 			<li><a href="index_signup.jsp" class="btn-3d cyan">Sign up</a>
 			</c:if>
+		</ul>
+		<ul style="padding-top: 30px; margin-top: 35px;">	
 		<c:if test="${not empty result.mb_Email }">
-			<li><a href="logOut" class="btn-2d cyan">logout</a></li>
+			<li><a href="logOut" class="btn-3d cyan" style="margin-top: 10px;">logout</a></li>
 			<form action="selectresult" method="get">
-			<button type="submit" class="btn-2d cyan">Mypage</button>
+			<li><input type="submit" class="btn-3d cyan" value="Mypage" style="font-size: 20px; height:45px; margin-top:5px; background-color: #616060; outline:none;" >
 			</form>
 		</c:if>
 		</ul>
@@ -49,7 +51,7 @@
 					안녕하세요. 거북목 진단을 통해 개인에게 필요한 자세 및 운동정보를 제공해주는 서비스입니다.
 					<br>
 					<h3>거북목 테스트를 시작하시겠습니까?</h3>
-					<a href="index_testText.jsp" class="button scrolly">Let's go</a>
+					<a href="index_testText.jsp" class="button scrolly" style="background-color: white;">Let's go</a>
 				</p>
 			</div>
 		</section>
@@ -112,10 +114,10 @@
 							<ul id="post-list">
 								<!-- 여기에 업로드된 게시물이 추가됩니다 -->
 								<c:forEach var="item" items="${postList}">
-								<img src="./images/${item.post_File}" width="200px" height="200px">
+								<img src="./images/${item.post_File}" width="300px" height="400px">
 								<p>${item.post_Content }</p>
 								<form action="" method="post">
-								<textarea name="comment" rows="4px" cols="2px"></textarea>
+								<textarea name="comment" rows="4px" cols="1px"></textarea>
 								<button type="submit">댓글 작성</button>
 								</form>
 								</c:forEach>

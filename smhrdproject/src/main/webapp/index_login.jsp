@@ -61,8 +61,9 @@
 						<div class="btn-container">
 							<a href="#" type="login">Forgot your password?</a>
 							<br><br>
-							<button type="submit" class="btn2-3d">Login</button>
-							<a href="index_signup.jsp" class="btn2-3d">Sign up</a>
+							<!-- <button type="submit"class="btn4-3d">Login</button> -->
+							<button type="submit" class="btn4-3d" style="font-size:25px">Login</button>
+							<a href="index_signup.jsp" class="btn4-3d">Sign up</a>
 						</div>
 					</form>
 				</header>
