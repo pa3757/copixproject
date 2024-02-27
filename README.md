@@ -16,13 +16,13 @@
 # 7. 서비스 흐름도
 ![image](https://github.com/pa3757/copixproject/assets/158264712/5126c4b1-e435-416d-b0d1-a52874c6237c)
 # 8. WEB 페이지
-메인 페이지
+## 메인 페이지
 ![image](https://github.com/pa3757/copixproject/assets/158264712/5954e016-a4a8-409e-8787-77137c8bb0b9)
 ![image](https://github.com/pa3757/copixproject/assets/158264712/ea216256-4e54-4882-a098-e9478aa0c615)
-검사 페이지
+## 검사 페이지
 ![image](https://github.com/pa3757/copixproject/assets/158264712/4dadc5ed-108f-4955-aacb-2f3ee192b3da)
 ![image](https://github.com/pa3757/copixproject/assets/158264712/4ceae024-5c3f-4585-83b7-6cf0ff718ed2)
-마이 페이지
+## 마이 페이지
 ![image](https://github.com/pa3757/copixproject/assets/158264712/98fa2868-7adb-40fe-9a5c-809f816cc29f)
 # 9. 트러블 슈팅
 ![image](https://github.com/pa3757/copixproject/assets/158264712/63fa7882-d41d-4922-8fb6-5b2c857da190)
