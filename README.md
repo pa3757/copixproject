@@ -30,3 +30,6 @@
 # 10. 팀원 소개 및 담당업무
 ![image](https://github.com/pa3757/copixproject/assets/158264712/015af9a4-ec5e-4d44-a5ab-40dbd6b9cdd4)
 # 11. 시연영상
+![GIFMaker_me](https://github.com/pa3757/copixproject/assets/158264712/ab448bf2-87ca-4e20-ba0d-c7f7bdfe9ad4)
+# 12. 참고문헌
+![image](https://github.com/pa3757/copixproject/assets/158264712/5ebcf1f5-26fc-42b4-871d-2e265e564ef4)
